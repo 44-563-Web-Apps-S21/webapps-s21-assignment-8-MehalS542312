@@ -11,9 +11,33 @@ const server =
 
       res.write('<html> <head> <title> Served </title> </head>')
       res.write('<body>')
-      res.write('Content \n')
-      res.write('More content \n')
-      res.write('Hello World')    
+      res.write('<table><tr><th>Location</th>')
+      res.write('<th>Hours</th>')
+      res.write('<th>Money</th>')
+      res.write('</tr>') 
+      res.write('<tr>')
+      res.write('<td>Taj mahal</td>')
+      res.write('<td>Ten</td>')
+      res.write('<td>&#36; 1200</td>')
+      res.write('</tr>') 
+      
+      res.write('<tr>')
+      res.write('<td>Maldives</td>')
+      res.write('<td>six</td>')
+      res.write('<td>&#36; 500</td>')
+      res.write('</tr>')
+
+      res.write('<tr>')
+      res.write('<td>Bali</td>')
+      res.write('<td>four</td>')
+      res.write('<td>&#36; 800</td>')
+      res.write('</tr>')
+
+      res.write('<tr>')
+      res.write('<td>America</td>')
+      res.write('<td>six</td>')
+      res.write('<td>&#36; 4200</td>')
+      res.write('</tr>')
       res.end('</body></html>')
       //Close the response
     }                           
